@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encontre seu Amigo - Programa ARCA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/Inicio/index.css">
+    <link rel="stylesheet" href="/Adocao/adocao.css">
+</head>
+<body>
+
+    <header class="navbar-header">
+        <nav class="navbar" aria-label="Menu Principal">
+            <a href="/Inicio/index.html" class="logo"><i class="fa-solid fa-shield-cat"></i> PROGRAMA <span>ARCA</span></a>
+            <button class="menu-toggle" aria-label="Abrir menu"><i class="fa-solid fa-bars"></i></button>
+            <ul class="nav-links">
+                <li><a href="/Inicio/index.html" class="nav-item">Início</a></li>
+                <li><a href="/Adocao/adocao.html" class="nav-item active">Adoção</a></li>
+                <li><a href="/Resgate/resgate.html" class="nav-item">Resgate</a></li>
+                <li><a href="/Rede_de_apoio/rede.html" class="nav-item">Rede de Apoio</a></li>
+                <li><a href="/Faq/faq.html" class="nav-item">FAQ</a></li>
+                <li><a href="/Contato/contato.html" class="nav-item">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="adoption-main">
+        <section class="container filter-container">
+            <div class="search-box-wrapper">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" id="search-input" placeholder="Busque um amigo pelo nome...">
+            </div>
+            
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="cachorro">Cachorros</button>
+                <button class="filter-btn" data-filter="gato">Gatos</button>
+                <button class="filter-btn" data-filter="filhote">Filhotes</button>
+                <button class="filter-btn" data-filter="adulto">Adultos</button>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="animals-grid" id="animals-grid">
+                <div class="skeleton-card"></div>
+                <div class="skeleton-card"></div>
+                <div class="skeleton-card"></div>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal" id="animal-modal" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <button class="close-modal" aria-label="Fechar Modal">&times;</button>
+            <div class="modal-body" id="modal-body">
+                </div>
+        </div>
+    </div>
+
+      <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo-footer"><i class="fa-solid fa-shield-cat"></i> PROGRAMA ARCA</a>
+                <p>Transformando abandono em finais felizes desde 2021.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="/Inicio/index.html">Início</a></li>
+                    <li><a href="/Adocao/adocao.html">Adoção</a></li>
+                    <li><a href="/Resgate/resgate.html">Solicitar Resgate</a></li>
+                    <li><a href="/Rede_de_apoio/rede.html">Rede de Apoio</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contato</h3>
+                <p><i class="fa-solid fa-envelope"></i> contato@programaarca.org</p>
+                <p><i class="fa-solid fa-location-dot"></i> Vila Velha, ES - Brasil</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Programa ARCA. Todos os direitos reservados. Projeto Institucional.</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="/Inicio/index.js"></script>
+    <script src="/Adocao/adocao.js"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+.contact-main {
+    padding-top: 140px;
+    padding-bottom: 80px;
+}
+
+.contact-info-column .section-subtitle-text {
+    color: var(--gray-600);
+    margin-bottom: 32px;
+}
+
+
+
+.contact-cards-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.c-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: var(--white);
+    padding: 20px 24px;
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--gray-100);
+}
+
+.c-icon-wrapper {
+    width: 48px; height: 48px;
+    background: var(--green-light);
+    color: var(--green-dark-active);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px;
+}
+
+.wpp-icon { background: #e8f5e9; color: #2e7d32; }
+
+.c-card h3 { font-size: 16px; color: var(--blue); }
+.c-card p { font-size: 15px; color: var(--gray-600); font-weight: 600; }
+
+
+
+.social-card-integration { align-items: flex-start; }
+.contact-social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 6px;
+}
+.contact-social-links a {
+    color: var(--gray-600);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.contact-social-links a:hover { color: var(--green-dark); }
+
+
+
+.premium-form-box {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--gray-100);
+    position: relative;
+    overflow: hidden;
+}
+
+.premium-form-box h2 { font-size: 28px; margin-bottom: 6px; color: var(--blue); }
+.premium-form-box p { color: var(--gray-500); margin-bottom: 32px; font-size: 14px; }
+
+.floating-input-group {
+    position: relative;
+    margin-bottom: 32px;
+}
+
+
+
+.floating-input-group input, .floating-input-group textarea {
+    width: 100%;
+    padding: 12px 0px;
+    font-family: inherit;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid var(--gray-200);
+    background: transparent;
+    outline: none;
+    color: var(--blue);
+    transition: border-color 0.3s ease;
+}
+
+.floating-input-group label {
+    position: absolute;
+    top: 12px;
+    left: 0;
+    color: var(--gray-400);
+    font-size: 16px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+
+
+.floating-input-group input:focus ~ label,
+.floating-input-group input:not(:placeholder-shown) ~ label,
+.floating-input-group textarea:focus ~ label,
+.floating-input-group textarea:not(:placeholder-shown) ~ label {
+    top: -12px;
+    font-size: 13px;
+    color: var(--green-dark);
+    font-weight: 700;
+}
+
+.input-bar {
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 0; height: 2px;
+    background: var(--green);
+    transition: width 0.3s ease;
+}
+
+.floating-input-group input:focus ~ .input-bar,
+.floating-input-group textarea:focus ~ .input-bar {
+    width: 100%;
+}
+
+
+
+.form-feedback-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: var(--white);
+    display: flex; align-items: center; justify-content: center;
+    opacity: 0; pointer-events: none;
+    transition: opacity 0.4s ease;
+    z-index: 10;
+}
+
+.form-feedback-overlay.active { opacity: 1; pointer-events: auto; }
+
+.feedback-card { text-align: center; padding: 24px; }
+.feedback-success-icon { font-size: 56px; color: var(--green); margin-bottom: 16px; }
